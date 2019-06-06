@@ -1,8 +1,6 @@
 # Enum
 
 [![Build Status](https://travis-ci.org/yar3333/smart-enum.svg?branch=master)](https://travis-ci.org/yar3333/smart-enum)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yar3333/smart-enum/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yar3333/smart-enum/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/yar3333/smart-enum/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yar3333/smart-enum/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/yar3333/smart-enum/version.png)](https://packagist.org/packages/yar3333/smart-enum)
 [![Total Downloads](https://poser.pugx.org/yar3333/smart-enum/downloads.png)](https://packagist.org/packages/yar3333/smart-enum)
 
