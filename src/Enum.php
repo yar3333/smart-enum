@@ -176,7 +176,7 @@ abstract class Enum implements \JsonSerializable
         return $this->name;
     }
 
-    function jsonSerialize()
+    public function jsonSerialize()
     {
         return $this->name;
     }
