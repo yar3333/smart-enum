@@ -26,9 +26,11 @@ abstract class Enum implements \JsonSerializable
      * @return static
      * @throws EnumException
      */
-    final static function fromName(string $name)
+    final public static function fromName(string $name)
     {
-        if (in_array($name, static::getNames(), true)) return static::createNamedInstance($name);
+        if (in_array($name, static::getNames(), true)) {
+            return static::createNamedInstance($name);
+        }
 
         throw EnumException::becauseUnknownMember(static::class, $name);
     }
@@ -38,7 +40,7 @@ abstract class Enum implements \JsonSerializable
      * @return static
      * @throws EnumException
      */
-    final static function fromValue($value)
+    final public static function fromValue($value)
     {
         $name_values = self::getEnumReflection(static::class)->getConstants();
 
@@ -58,7 +60,7 @@ abstract class Enum implements \JsonSerializable
      * @return static
      * @throws EnumException
      */
-    final static function fromValueOrName($value_or_name)
+    final public static function fromValueOrName($value_or_name)
     {
         $name_values = self::getEnumReflection(static::class)->getConstants();
 
@@ -93,7 +95,7 @@ abstract class Enum implements \JsonSerializable
     /**
      * @return string[]
      */
-    static function getNames(): array
+    public static function getNames(): array
     {
         return array_keys(self::getEnumReflection(static::class)->getConstants());
     }
@@ -101,7 +103,7 @@ abstract class Enum implements \JsonSerializable
     /**
      * @return string[]
      */
-    static function getValues(): array
+    public static function getValues(): array
     {
         return array_values(self::getEnumReflection(static::class)->getConstants());
     }
