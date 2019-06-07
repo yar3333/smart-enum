@@ -6,7 +6,7 @@
          bootstrap="vendor/autoload.php"
 >
     <testsuites>
-        <testsuite name="Paillechat Enum Test Suite">
+        <testsuite name="SmartEnum Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
