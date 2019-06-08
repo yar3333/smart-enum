@@ -1,8 +1,8 @@
 # Enum
 
 [![Build Status](https://travis-ci.org/yar3333/smart-enum.svg?branch=master)](https://travis-ci.org/yar3333/smart-enum)
-[![Latest Stable Version](https://poser.pugx.org/yar3333/smart-enum/version.png)](https://packagist.org/packages/yar3333/smart-enum)
-[![Total Downloads](https://poser.pugx.org/yar3333/smart-enum/downloads.png)](https://packagist.org/packages/yar3333/smart-enum)
+[![Latest Stable Version](https://poser.pugx.org/smart-enum/smart-enum/version)](https://packagist.org/packages/smart-enum/smart-enum)
+[![Total Downloads](https://poser.pugx.org/smart-enum/smart-enum/downloads)](https://packagist.org/packages/smart-enum/smart-enum)
 
 A PHP 7.1+ enumeration library. Based on [php-enum](https://github.com/paillechat/php-enum).
 
