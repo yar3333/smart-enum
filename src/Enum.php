@@ -161,6 +161,9 @@ abstract class Enum implements \JsonSerializable
         return self::$instances[$key];
     }
 
+    /**
+     * @return int|float|string|bool|null
+     */
     final public function getValue()
     {
         return self::getEnumReflection(static::class)->getConstant($this->name);
