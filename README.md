@@ -1,4 +1,4 @@
-# Enum
+# smart-enum
 
 [![Build Status](https://travis-ci.org/yar3333/smart-enum.svg?branch=master)](https://travis-ci.org/yar3333/smart-enum)
 [![Latest Stable Version](https://poser.pugx.org/smart-enum/smart-enum/version)](https://packagist.org/packages/smart-enum/smart-enum)
