@@ -49,4 +49,6 @@ $new = IssueType::fromValue($value);
 
 $names = IssueType::getNames(); // [ "ONE", "TWO" ]
 $values = IssueType::getValues(); // [ 1, 2 ]
+
+$all = IssueType::getAll(); // [ IssueType::ONE(), IssueType::TWO() ]
 ```
