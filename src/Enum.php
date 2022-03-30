@@ -113,11 +113,11 @@ abstract class Enum implements \JsonSerializable
      */
     final public static function getAll() : array
     {
-        $r = [];
+        $result = [];
         foreach (self::getNames() as $name) {
-            $r[] = static::createNamedInstance($name);
+            $result[] = static::createNamedInstance($name);
         }
-        return $r;
+        return $result;
     }
 
     private static function getConstantReflection(string $class, string $name): \ReflectionClassConstant
@@ -147,7 +147,7 @@ abstract class Enum implements \JsonSerializable
             try {
                 self::$reflections[$class] = new \ReflectionClass($class);
                 // @codeCoverageIgnoreStart
-            } catch (\ReflectionException $e) {
+            } catch (\ReflectionException $exception) {
                 throw new \LogicException('Class should be valid FQCN. Fix internal calls.');
                 // @codeCoverageIgnoreEnd
             }
@@ -190,7 +190,7 @@ abstract class Enum implements \JsonSerializable
     {
         return $this->name;
     }
-
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->name;
